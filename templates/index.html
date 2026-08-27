@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ECommerceGPT — AI Shopping Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">✦</span><div><b>ECommerceGPT</b><small>AI Shopping Assistant</small></div></div>
+  <div class="status"><span></span> Ollama Local AI</div>
+</header>
+
+<main class="app">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">OLLAMA • RAG • SMART SEARCH</p>
+      <h1>Shop smarter with<br><span>local AI.</span></h1>
+      <p class="hero-copy">Ask about products, track orders, get recommendations, or understand customer reviews — all from one intelligent assistant.</p>
+      <div class="chips">
+        <button onclick="usePrompt('Recommend a gaming laptop')">🎮 Gaming laptop</button>
+        <button onclick="usePrompt('Where is my parcel?')">📦 Track order</button>
+        <button onclick="usePrompt('Tell me about Samsung Galaxy')">📱 Product details</button>
+        <button onclick="usePrompt('What do customers think about Lenovo Laptop 3?')">⭐ Reviews</button>
+      </div>
+    </div>
+    <div class="architecture">
+      <div class="arch-title">How it works</div>
+      <div class="flow"><b>You</b><i>→</i><b>Intent</b><i>→</i><b>RAG</b><i>→</i><b>Qwen</b></div>
+      <div class="data-pills"><span>FAQs</span><span>Products</span><span>Reviews</span></div>
+    </div>
+  </section>
+
+  <section class="chat-card">
+    <div class="chat-head">
+      <div><div class="avatar">✦</div><div><b>Shopping Assistant</b><small>Ask anything about your shopping</small></div></div>
+      <button class="clear" onclick="clearChat()">Clear</button>
+    </div>
+    <div id="messages" class="messages">
+      <div class="msg assistant"><div class="bubble">Hi! 👋 I'm your AI shopping assistant. Try asking me to <b>recommend a product</b>, answer an <b>order FAQ</b>, explain a <b>product</b>, or summarize <b>reviews</b>.</div></div>
+    </div>
+    <div class="composer">
+      <input id="input" placeholder="Ask something like “Recommend a gaming laptop”" onkeydown="if(event.key==='Enter') send()">
+      <button onclick="send()">Send <span>↗</span></button>
+    </div>
+    <div class="hint">Powered by <b>Ollama + Qwen</b> • Retrieval uses TF-IDF and cosine similarity</div>
+  </section>
+
+  <section class="modules">
+    <div><span>01</span><b>FAQ Semantic Search</b><p>Finds the closest FAQ using similarity.</p></div>
+    <div><span>02</span><b>Product Recommendation</b><p>Retrieves the top 3 matching products.</p></div>
+    <div><span>03</span><b>Product Q&A</b><p>Answers from retrieved product context.</p></div>
+    <div><span>04</span><b>Review Intelligence</b><p>Classifies and summarizes customer sentiment.</p></div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+product_id,product_name,brand,category,price,description
+P001,Lenovo Laptop 3,Lenovo,Laptop,62000,Gaming laptop with Intel processor RTX graphics 16GB RAM and SSD storage
+P002,HP Laptop 2,HP,Laptop,68000,Performance laptop with Intel processor 16GB RAM SSD and dedicated graphics
+P003,ASUS Laptop 1,ASUS,Laptop,75000,Gaming laptop with RTX graphics fast SSD high refresh display and 16GB RAM
+P004,Samsung Galaxy,Samsung,Phone,28999,Smartphone with AMOLED display strong battery and high quality camera
+P005,Pixel Pro,Google,Phone,34999,Smartphone with advanced camera clean Android experience and water resistance
+P006,OnePlus Nord,OnePlus,Phone,27999,Fast smartphone with AMOLED display large battery and smooth performance
